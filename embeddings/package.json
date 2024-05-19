@@ -1,0 +1,25 @@
+{
+  "name": "embeddings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r ts-node/register --env-file=.env  ./src/emb/main.ts",
+    "start:emb": "node -r ts-node/register --env-file=.env ./src/base_emb/index.ts",
+    "start:sim": "node -r ts-node/register --env-file=.env  ./src/base_emb/calc_sim.ts",
+    "start:movie": "node -r ts-node/register --env-file=.env  ./src/movie/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pinecone-database/pinecone": "^2.2.1",
+    "chromadb": "^1.8.1",
+    "openai": "^4.47.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

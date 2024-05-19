@@ -1,0 +1,23 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:basic": "node -r ts-node/register --env-file=.env ./src/basic_chat/index.ts",
+    "start:tools": "node -r ts-node/register --env-file=.env ./src/tools/index.ts",
+    "start:tools:flight": "node -r ts-node/register --env-file=.env ./src/tools/index_flight.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "openai": "^4.47.1",
+    "tiktoken": "^1.0.15"
+  }
+}
